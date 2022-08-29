@@ -1,0 +1,115 @@
+@import "theme.css";
+
+
+*{
+    font-family: var(--ff-monteserrat);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    
+   
+}
+ul{
+    display: flex;
+}
+
+.left img{
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+.left{
+background-color: var(--gri-8);
+width: 33%;
+height: 5vh;
+display: flex;
+align-items: center;
+padding-left: 0.5rem;
+flex-grow: 1;
+flex-basis: 0;
+box-shadow: var(--acik-gogle);
+
+
+}
+
+.right{
+    background-color: var(--mavi-7);
+   width: 33%;
+   height: 5vh;
+   display: flex;
+justify-content: right;
+align-items: center;
+flex-grow: 1;
+flex-basis: 0;
+box-shadow: var(--acik-gogle);
+
+
+
+}
+.right .fab{
+    padding: 0.2rem;
+    font-size: 2rem;
+}
+.right .fab:hover{
+    font-size: 3rem;
+}
+.nav{
+background-color: var(--mavi-10);
+width: 34%;
+height: 6vh;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0.5rem;
+flex-grow: 1;
+flex-basis: 0;
+box-shadow: var(--koyu-golge);
+
+}
+.list-item{
+    padding: 1rem;
+    transition: all 1s;
+   
+}
+.list-item a{
+    color: black;
+}
+
+.list-item:hover{
+    background-color: var(--tropikal-sari);
+}
+.list-item:hover a{
+    color: var(--acik-kirmizi);
+}
+
+@media  screen and (max-width:700px){
+
+    .nav{
+        width: 50%;
+        height: 30vh;
+    }
+    .right{
+        width: 25%;
+    }
+    .left{
+        width: 25%;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+}
